@@ -4,26 +4,28 @@ A personal control surface for streaming and desktop apps. Use your phone on the
 
 [Download the latest release](https://github.com/alhnxx/Pocket-Deck-Releases/releases/latest)
 
-## Install
+## Install once
 
-Download the release ZIP, extract it, and run `obs-pocket/Pocket Deck.exe`. The host PC needs Node.js and Microsoft Edge WebView2 Runtime. Connect your own accounts and pair your phone from Settings.
+Download the latest release ZIP, extract it, and run `obs-pocket/Pocket Deck.exe`. The host PC needs **Node.js 22+** and Microsoft Edge WebView2 Runtime. Connect your own accounts and pair your phone from Settings.
 
-## Updates
+## One-click updates — 3.15.0 and later
 
-From version 3.14.0, Pocket Deck checks GitHub at startup and every six hours. You can also check manually in Settings. Published updates show a notification and download button. Installation is manual.
+New published releases appear inside the desktop app. Click **Update and restart** to save pending deck changes, download and verify the official package, close the app, replace runtime files, and reopen it automatically. Checks run at startup and every six hours, with a manual check in Settings.
 
-Close Pocket Deck, extract the new ZIP, replace runtime files in your existing `obs-pocket` folder, **keep your existing `data` folder**, and reopen the app. Your local accounts and keys remain there. Do not copy someone else's data folder.
+Your entire `data` folder stays in place. Runtime backups are kept under `data/updates`; failed file replacements are rolled back. The browser version shows release information; one-click installation runs in the Windows app.
 
-Local edits reach other devices only after a new release is published. Versions older than 3.14.0 need to install 3.14.0 once to receive notifications.
+If you currently use 3.14.0 or older, install **3.15.0 once**: close the app, replace runtime files in the same folder, **keep your existing data folder**, and reopen it. All later updates can use the in-app button.
 
-## التثبيت والتحديث
+Local edits reach other devices only after a new release is published here.
 
-نزّل أحدث ZIP، فك الضغط وشغّل **Pocket Deck.exe** داخل مجلد `obs-pocket`. يحتاج الكمبيوتر Node.js وWebView2. اربط حساباتك أنت، ثم اقترن بالجوال من الإعدادات.
+## التحديث بضغطة واحدة
 
-ابتداءً من **3.14.0** يظهر إشعار داخل البرنامج عند نشر إصدار جديد، ومعه زر تنزيل. بعد التنزيل أغلق البرنامج، واستبدل ملفات التشغيل في مجلده نفسه، **واحتفظ بمجلد `data`** ثم شغّله مجددًا. التثبيت يدوي، وحساباتك وأزرارك تبقى على جهازك.
+ثبّت **3.15.0** مرة واحدة. بعدها، عند نشر إصدار جديد يظهر إشعار وزر **«تحديث وإعادة التشغيل»** داخل التطبيق: يحفظ تعديلات اللوحة، وينزّل الحزمة ويتحقق منها، ثم يغلق ويستبدل الملفات ويعيد تشغيل نفسه.
+
+حساباتك وأزرارك وأصواتك تبقى داخل مجلد `data`. يحتفظ البرنامج بنسخة احتياطية للملفات السابقة، ويرجعها إذا فشل استبدال ملفات التشغيل. عند الترقية من إصدار أقدم احتفظ بمجلد `data` الموجود عندك.
 
 ## Privacy and acknowledgements
 
-Release ZIPs exclude all personal data files, account tokens, paired devices, uploaded images and local sounds. Third-party acknowledgements are included in the ZIP's `licenses` directory.
+Release ZIPs exclude personal data files, account tokens, paired devices, uploaded images and local sounds. Third-party acknowledgements are in the ZIP’s `licenses` directory.
 
 Pocket Deck is independent of Elgato. Elgato plugins and profiles are not directly compatible.
